@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+
+header, footer, section, article,  aside, main{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+article header{
+    background-color: turquoise;
+}
+
+article{
+    background-color: rgb(224, 214, 94);
+    color: black;
+}
+
+section{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+section article{
+flex: 1 1 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123;
+    overflow: hidden;
+}
+
+.navbar div.home {
+    background-color: #04AA6D;
+    color: white;
+}
+.navbar a {
+    border-left: 1px solid royalblue;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+}
+#listaval ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+#listaval, #divekkel {
+    display: flex;
+    justify-content: space-between;
+}
+#listaval #menu {
+    display: flex;
+}
+
+  
+section article :nth-child(1){
+    order: 5;
+}
+section article :nth-child(2){
+    order: 6;
+}
+@media screen and (max-width: 700px){
+    section{
+        flex-direction: column;
+    }
+    
+    
+}
